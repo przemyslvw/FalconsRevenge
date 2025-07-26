@@ -1,0 +1,83 @@
+// Konfiguracja typów przeciwników
+export const enemyTypes = {
+  tie: {
+    laserColor: '#ff0000',
+    healthBarColor: '#ff4444',
+    health: 15,
+    speed: 1.5,
+    shootCooldown: 2000,
+    range: 600,
+  },
+  heavy: {
+    laserColor: '#00ffff',
+    healthBarColor: '#00ffff',
+    health: 35,
+    speed: 0.8,
+    shootCooldown: 2500,
+    range: 600,
+  },
+  interceptor: {
+    laserColor: '#ffff00',
+    healthBarColor: '#ffff00',
+    health: 30,
+    speed: 2.5,
+    shootCooldown: 1200,
+    range: 700,
+  },
+  condor: {
+    laserColor: '#9100c8',
+    healthBarColor: '#9100c8',
+    health: 40,
+    speed: 0,
+    shootCooldown: 2000,
+    range: 700,
+  },
+};
+
+// Konfiguracja bossów
+export const bossTypes = {
+  'tie-boss': {
+    name: 'TIE Advanced x1',
+    health: 200,
+    speed: 1,
+    laserColor: '#ff3366',
+    healthBarColor: '#ff3366',
+    shootCooldown: 1000,
+    image: 'tie-boss.png',
+    points: 1000,
+    attackPattern: 'single',
+  },
+  destroyer: {
+    name: 'Imperial Destroyer',
+    health: 500,
+    speed: 1.2,
+    laserColor: '#a500cd',
+    healthBarColor: '#a500cd',
+    shootCooldown: 1500,
+    image: 'destroyer-boss.png',
+    points: 2500,
+    attackPattern: 'spread',
+  },
+  'star-destroyer': {
+    name: 'Star Destroyer',
+    health: 1000,
+    speed: 1.4,
+    laserColor: '#ff9900',
+    healthBarColor: '#ff9900',
+    shootCooldown: 2000,
+    image: 'star-destroyer-boss.png',
+    points: 5000,
+    attackPattern: 'barrage',
+  },
+  'death-star': {
+    name: 'Death Star',
+    health: 2000,
+    speed: 1.5,
+    laserColor: '#ff44c9',
+    healthBarColor: '#ff44c9',
+    shootCooldown: 2000,
+    image: 'death-star-boss.png',
+    points: 10000,
+    attackPattern: 'super-barrage',
+  },
+};
